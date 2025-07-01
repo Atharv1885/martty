@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Walmart Delivery Entry</title>
+</head>
+<body>
+  <h1>Enter Product Delivery Data</h1>
+  <form id="productForm">
+    <input type="number" name="id" placeholder="Product ID" required /><br />
+    <input type="number" name="weight" placeholder="Weight" required /><br />
+    <input type="text" name="dimensions" placeholder="Dimensions" required /><br />
+    <input type="text" name="photo" placeholder="Photo URL" required /><br />
+    <input type="text" name="video" placeholder="Video URL" required /><br />
+    <input type="text" name="hubId" placeholder="Hub ID" required /><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("productForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = {};
+      formData.forEach((value, key) => (data[key] = value));
+
+      const res = await fetch("http://localhost:5000/update", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      alert(result.message || result.error);
+    });
+  </script>
+</body>
+</html>
