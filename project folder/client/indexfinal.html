@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart ReHub - Returns Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link data-default-icon="https://trama-static.s3.eu-central-1.amazonaws.com/images/hall-of-fame/logos/98-logo.png" rel="icon" size="190x190"
+    href="https://trama-static.s3.eu-central-1.amazonaws.com/images/hall-of-fame/logos/98-logo.png"/>
+</head>
+<body>
+ 
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">🌟</div>
+            <div class="logo-text">
+                <h1>Walmart ReHub</h1>
+                <p>Returns Management System</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="btn-primary">Staff Dashboard</button>
+            <a href="https://www.walmart.com" target="_blank">
+  <button class="btn-secondary">🌐 Visit Walmart.com</button>
+</a>
+            <button class="btn-secondary">🏪 Customer Marketplace</button>
+            <div class="notification-badge">5</div>
+            <div class="user-info">
+                <span> <h2>John Johnson</h2></span>
+                <span>Hub Manager</span>
+                <span>⚙️</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="left-section">
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">📦</div>
+                    <div class="stat-info">
+                        <h3>27</h3>
+                        <p>Total Products</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">⏰</div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Pending Pickup</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">📋</div>
+                    <div class="stat-info">
+                        <h3>8</h3>
+                        <p>In Storage</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon yellow">🚚</div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Ready for Resale</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-header">
+                    <div class="form-title">
+                        <div class="add-icon">+</div>
+                        Add Returned Product
+                    </div>
+                    <button class="btn-secondary">New Return</button>
+                </div>
+                <div class="form-content">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Product ID <span class="required">*</span></label>
+                            <input type="text" value="WM-12345678">
+                        </div>
+                        <div class="form-group">
+                            <label>Product Weight (kg) <span class="required">*</span></label>
+                            <input type="text" value="2.5">
+                        </div>
+                        <div class="form-group">
+                            <label>Hub ID <span class="required">*</span></label>
+                            <select>
+                                <option>Select Hub</option>
+                                <option>HUB-NYC-001</option>
+                                <option>DAL-HUB-004</option>
+                                <option>ATL-HUB-005</option>
+                                <option>PHX-HUB-008</option>
+                                <option>LAX-HUB-002 </option>
+                                <option>SEA-HUB-007</option>
+                                <option>DEN-HUB-009</option>
+                                <option>BOS-HUB-010 </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Driver Name <span class="required">*</span></label>
+                            <input type="text" value="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label>Vehicle ID <span class="required">*</span></label>
+                            <input type="text" value="VH-12345">
+                        </div>
+                        <div class="form-group">
+                            <label>Original Cost ($) <span class="required">*</span></label>
+                            <input type="text" value="299.99">
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Product Condition <span class="required">*</span></label>
+                            <select>
+                                <option>Select Condition</option>
+                                <option>Like New</option>
+                                <option>Minor Scratches </option>
+                                <option> Used - Acceptable</option>
+                                <option>Damaged</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="upload-grid">
+                        <div>
+                            <label style="font-size: 14px; font-weight: 500; margin-bottom: 12px; display: block;">Product Photo</label>
+                            <input type="file" id="productPhoto" name="productPhoto" accept="image/*">
+                            <div class="upload-area">
+                                <div class="upload-icon">📁</div>
+                                <div class="upload-text">Click to upload or drag and drop</div>
+                                <div class="upload-format">PNG, JPG up to 10MB</div>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="font-size: 14px; font-weight: 500; margin-bottom: 12px; display: block;">Product Video</label>
+                             <input type="file" id="productVideo" name="productVideo" accept="video/*">
+                            <div class="upload-area">
+                                <div class="upload-icon">📁</div>
+                                <div class="upload-text">Click to upload or drag and drop</div>
+                                <div class="upload-format">MP4, MOV up to 50MB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="hot-deals-section">
+                <div class="hot-deals-header">
+                    <div class="hot-deals-title">
+                        <span class="fire-icon">🔥</span>
+                        Hot Deals Management
+                    </div>
+                    <button class="btn-hot-deal">Create Hot Deal</button>
+                </div>
+                
+                <div class="no-deals">
+                    No hot deals available. Create one to get started!
+                </div>
+            </div>
+
+            <div class="inventory-section">
+                <div class="inventory-header">
+                    <h2 class="inventory-title">Current Inventory</h2>
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" placeholder="Search products...">
+                        </div>
+                        <button class="filter-btn">☰</button>
+                    </div>
+                </div>
+                <div class="product-list">
+                 
+                    <div class="product-card">
+  <div class="product-content">
+    
+    <div class="product-image">
+      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_650_pp_renders_main_banner.124.png?v=1740735495" alt="Product Image">
+    </div>
+    
+    <div class="product-details">
+      <div class="product-header">
+        <div class="product-info">
+          <h3>WM-84083521</h3>
+          <div class="product-meta">
+            Driver: Mike Johnson • Weight: 1.2kg • Vehicle: VH-98765
+          </div>
+          <div class="rating-tags">
+            <div class="stars">★★★★★</div>
+            <span class="rating-text">4.5 (2 reviews)</span>
+            <span class="tag ready">Ready For Resale</span>
+            <span class="tag like-new">Like New</span>
+          </div>
+        </div>
+        <div class="product-pricing">
+          <div class="product-price">$349.99</div>
+          <div class="storage-info">Storage: A1-001</div>
+          <div class="added-time">Added 2 days ago</div>
+        </div>
+      </div>
+      
+      <div class="reviews-section">
+        <div class="reviews-title">Recent Reviews</div>
+        <div class="review-grid">
+          <div class="review">
+            <div class="review-header">
+              <span class="reviewer-name">Mike Morris</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <div class="review-text">
+              Great noise cancellation, works perfectly!
+            </div>
+            <div class="verified-purchase">
+              <span class="verified-badge">Verified Purchase</span>
+              <span>23 seconds ago</span>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-header">
+              <span class="reviewer-name">Sarah Taylor</span>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <div class="review-text">
+              Good condition, minor cosmetic wear but functions perfectly.
+            </div>
+            <div class="verified-purchase">
+              <span class="verified-badge">Verified Purchase</span>
+              <span>7 hours ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                   
+                    <div class="product-card">
+                        <div class="product-image">
+      <img src="https://i5.walmartimages.com/seo/Goplus-11-lbs-Portable-Mini-Compact-Twin-Tub-Washing-Machine-with-Transparent-Lid_32bf2a6a-b900-4588-a688-9c46397f9b02.72e16254f5ffa5116ab906d39f985c99.jpeg" alt="Product Image">
+    </div>
+                        <div class="product-header">
+                            <div class="product-info">
+                                <h3>WM-12345678</h3>
+                                <div class="product-details">Driver: Sarah Williams • Weight: 18.5kg • Vehicle: VH-54321</div>
+                                <div class="status-tags">
+                                    <span class="tag in-storage">In Storage</span>
+                                    <span class="tag good">Good</span>
+                                </div>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="product-price">$299.99</div>
+                                <div class="storage-info">Storage: B2-015</div>
+                                <div class="added-time">Added 23 seconds ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="add-product-section">
+                <button class="btn-add-product">Add Product to Inventory</button>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+            </div>
+        </div> 
+
+        <div class="right-section">
+            
+            <div class="hub-info">
+                <h2>Hub Information</h2>
+                
+                <div class="hub-detail">
+                    <h3>Current Hub:</h3>
+                    <div class="hub-id">HUB-NYC-001</div>
+                </div>
+
+                <div class="hub-detail">
+                    <h3>Capacity:</h3>
+                    <div class="capacity-info">
+                        <span class="capacity-percentage">68%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="capacity-text">680 / 1000 products</div>
+                </div>
+
+                <div class="hub-detail">
+                    <h3>Staff Online:</h3>
+                    <div class="staff-count">12 / 15</div>
+                    <div class="staff-status">
+                        <div class="status-dot"></div>
+                        80% staff online
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h3>Walmart ReHub</h3>
+                        <p>Returns Management System</p>
+                    </div>
+                </div>
+                <p>Efficient return processing and inventory management for Walmart's logistics network.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Staff Dashboard</a></li>
+                    <li><a href="#">Customer Marketplace</a></li>
+                    <li><a href="#">Product Catalog</a></li>
+                    <li><a href="#">Hub Analytics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Training Materials</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">📞 1-800-WALMART</div>
+                <div class="contact-info">✉️ rehub@walmart.com</div>
+                <div class="contact-info">📍 Bentonville, AR</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">© 2025 Walmart Inc. All rights reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+            
