@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walmart TrackPro - Product Tracking</title>
+  <link rel="stylesheet" href="style.css">
+  <link data-default-icon="https://trama-static.s3.eu-central-1.amazonaws.com/images/hall-of-fame/logos/98-logo.png" rel="icon" size="190x190"
+    href="https://trama-static.s3.eu-central-1.amazonaws.com/images/hall-of-fame/logos/98-logo.png"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="branding">
+      <h1>🌟Walmart TrackPro</h1>
+      <span>Product Tracking System</span>
+    </div>
+    <div class="actions">
+      <button class="btn btn-blue">Staff Dashboard</button>
+      <a href="https://www.walmart.com" target="_blank">
+  <button class="btn btn-gray">🌐 Visit Walmart.com</button>
+</a>
+      <a href="../WalmartReHub/indexfinal.html"
+       class="btn btn-gray">🏪ReHub</a>
+      <div class="user">
+        <b>John Johnson</b> Hub Manager
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Add Product Details</h2>
+    <form>
+      <div>
+        <label for="productId">Product ID *</label>
+        <input type="text" id="productId" placeholder="WM-12345678" required>
+      </div>
+
+      <div>
+        <label for="weight">Product Weight (kg) *</label>
+        <input type="number" id="weight" placeholder="2.5" required>
+      </div>
+
+      <div>
+        <label for="fromHub">From Hub ID *</label>
+        <input type="text" id="fromHub" placeholder="HUB-NYC-001" required>
+      </div>
+
+      <div>
+        <label for="toHub">To Hub ID *</label>
+        <input type="text" id="toHub" placeholder="HUB-CHI-002" required>
+      </div>
+
+      <div>
+        <label for="driverName">Driver Name *</label>
+        <input type="text" id="driverName" placeholder="John Smith" required>
+      </div>
+
+      <div>
+        <label for="vehicleId">Vehicle ID *</label>
+        <input type="text" id="vehicleId" placeholder="VH-12345" required>
+      </div>
+
+      <div>
+        <label for="sealIntact">Seal Intact? *</label>
+        <select id="sealIntact" required>
+          <option value="">Select Option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="arrivalDate">Arrival Date *</label>
+        <input type="date" id="arrivalDate" required>
+      </div>
+
+      <div class="full-width">
+        <label for="barcode">Barcode / QR Code Scan *</label>
+        <input type="text" id="barcode" placeholder="Scan or Enter Code" required>
+      </div>
+
+      <div class="full-width">
+        <label for="handlingNotes">Handling Notes / Damage Observed</label>
+        <textarea id="handlingNotes" rows="3" placeholder="e.g. Package dented on one side"></textarea>
+      </div>
+
+      <div class="full-width">
+        <label for="photo">Product Photo</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+
+      <div class="full-width">
+        <label for="video">Product Video</label>
+        <input type="file" id="video" accept="video/*">
+      </div>
+
+      <button type="submit">Submit Product Details</button>
+    </form>
+  </div>
+  <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h3>Walmart TrackPro</h3>
+                        <p style="color:  #c5bb35; font-size: 21px;">Product Tracking System</p>
+                    </div>
+                </div>
+                <p>Effortless Hub-to-Hub Tracking and Stock Management for Walmart’s Logistics Network.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Staff Dashboard</a></li>
+                    <li><a href="#">Customer Marketplace</a></li>
+                    <li><a href="#">Product Catalog</a></li>
+                    <li><a href="#">Hub Analytics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Training Materials</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">📞 1-800-WALMART</div>
+                <div class="contact-info">✉️ rehub@walmart.com</div>
+                <div class="contact-info">📍 Bentonville, AR</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">© 2025 Walmart Inc. All rights reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
